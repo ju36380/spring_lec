@@ -4,30 +4,25 @@ import spring.di.entity.Exam;
 
 public class GridExamConsole implements ExamConsole {
 
-private Exam exam;
-
-	public GridExamConsole() {
-		
-	}
+	private Exam exam;		
 	
-	public GridExamConsole(Exam exam) {
+	public GridExamConsole() {
+		// TODO Auto-generated constructor stub
+	}
+	public GridExamConsole(Exam exam) {		
 		this.exam = exam;
 	}
-	
 	@Override
 	public void print() {
-		System.out.println("â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”");
-		System.out.println("â”‚  total  â”‚   avg   â”‚");
-		System.out.println("â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤");
-		 System.out.printf("â”‚   %3d   â”‚  %3.2f   â”‚\n",exam.total(),exam.avg());
-		System.out.println("â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜");
+		System.out.println("¦£¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¨¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¤");
+		System.out.println("¦¢   total  ¦¢    avg   ¦¢");
+		System.out.println("¦§¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦«¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦©");
+		 System.out.printf("¦¢   %3d  ¦¢    %3.2f   ¦¢\n", exam.total(), exam.avg());
+		System.out.println("¦¦¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦ª¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¡¦¥");
 	}
-
 	@Override
 	public void setExam(Exam exam) {
 		this.exam = exam;
 	}
-	
-	
 
 }
